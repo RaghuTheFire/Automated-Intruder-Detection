@@ -6,7 +6,7 @@ Save your security maintenance money by simply building your own . Your siblings
 This C++ code is an implementation of a motion detection system using the OpenCV library. 
 Here's a breakdown of what the code does: 
 1. The code includes the necessary header files for OpenCV and the Windows API.
-2. 2. The `main()` function is the entry point of the program.
+2. The `main()` function is the entry point of the program.
 3. The video file path and the alarm sound file path are set.
 4. A `cv::VideoCapture` object is created to open the video file.
 5. The code checks if the video file is opened successfully. If not, it prints an error message and exits.

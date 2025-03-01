@@ -57,7 +57,8 @@ int main()
     cv::findContours(dilate, contours, cv::RETR_TREE, cv::CHAIN_APPROX_SIMPLE);
 
     // Loop through detected contours
-    for (const auto & c: contours) {
+    for (const auto & c: contours) 
+    {
       // Skip contours with small area
       if (cv::contourArea(c) < 2000) 
       {
@@ -72,6 +73,8 @@ int main()
 
       // Play an alert sound
       PlaySoundA(alarm_sound_path.c_str(), NULL, SND_ASYNC);
+
+      // system("mplayer alert.wav");  for Linux 
 
       // Wait for a short time
       cv::waitKey(10);
